@@ -1,13 +1,12 @@
 
 const express = require("express");
-const { body, validationResult } = require('express-validator');
-const postController = require("../controllers/post");
-const validator = require("../validator")
+const {getPosts, createPost} = require("../controllers/post");
+const {createPostValitor} = require("../validator")
 
 const routes = express.Router();
 
-routes.get("/", postController.getPosts);
-routes.post("/post", validator.createPostValitor, postController.createPost);
+routes.get("/", getPosts);
+routes.post("/post", createPostValitor, createPost);
 
 
 module.exports = routes;
