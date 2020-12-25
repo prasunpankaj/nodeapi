@@ -4,7 +4,7 @@
 	#https://nodejs.org/api/packages.html
 
 	#npm install <package-name>
-E.g: 
+#E.g: 
 	#npm install nodemon
 	#npm install express
 
